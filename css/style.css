@@ -1,0 +1,1049 @@
+/** Reset **/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/** Global **/
+.container{
+    max-width: 1430px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin: 0 auto;
+}
+.btn{
+    background-color: #344FBA;
+    color: #ffff;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: all .3s ease-in;
+}
+.btn:hover{
+    background-color: #000;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+a{
+    color: #344FBA;
+    transition: all .3s ease-in;
+}
+img{
+    max-width: 100%;
+}
+/** Header **/
+header{
+    height: 80px;
+    position: sticky;
+    top: 0;
+    background: #fff;
+    border-bottom: 1px solid #ebebeb;
+    z-index: 9;
+}
+header .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+}
+header .icon{
+    display: none;
+    position: absolute;
+    left: 15px;
+}
+header .icon span{
+    display: block;
+    height: 3px;
+    background: #000;
+    width: 26px;
+}
+header .icon span:nth-child(2){
+    margin-top: 4px;
+}
+header .icon span:nth-child(3){
+    margin-top: 4px;
+}
+
+.logo img{
+    display: block;
+    width: 200px;
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 70px;
+    margin-bottom: 0;
+    padding: 0;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+nav ul li a.active,
+nav ul li a:hover{
+    color: #344FBA;
+}
+.search svg{
+    width: 20px;
+    height: 22px;
+    fill: #000;
+    display: block;
+}
+
+/** Home **/
+.banner{
+    background-image: url(../assets/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 560px;
+}
+.banner .opacity{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #0000008a;
+}
+.banner h1{
+    color: #fff;
+    font-size: 3.2em;
+    margin-bottom: 0.5em;
+}
+.banner .btn{
+    font-size: 1.2em;
+}
+
+.acerca-de{
+    margin: 5em 0;
+}
+.acerca-de .container{
+    display: flex;
+    align-items: center;
+}
+.acerca-de figure{
+    width: 50%;
+    padding-right: 40px;
+}
+.acerca-de figure img{
+    max-width: 100%;
+}
+.acerca-de article{
+    width: 50%;
+    padding-left: 40px;
+}
+.acerca-de article h2{
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+.acerca-de article p{
+    line-height: 1.8em;
+    margin-bottom: 1em;
+}
+
+.services{
+    margin: 5em 0;
+}
+.services h2{
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+.services .content-card-service{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    justify-content: space-between;
+}
+.services .card-service{
+    text-align: center;
+}
+.services .card-service img{
+    max-width: 100%;
+    display: block;
+}
+.services .card-service h3{
+    font-size: 1.2em;
+    margin: 1em 0;
+}
+
+.banner-cta{
+    background-image: url(../assets/banner-cta.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 360px;
+    margin: 5em 0;
+}
+.banner-cta .opacity{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color: #0000006e;
+}
+.banner-cta h2, .banner-cta h3{
+    color: #fff;
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+.banner-cta .btn{
+    font-size: 1.2em;
+}
+
+.blog{
+    margin: 5em 0;
+}
+.blog h2{
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+.blog .content-card-blog{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2.85%;
+}
+.blog .content-card-blog .card-blog{
+    width: 31.43%;
+}
+.blog .content-card-blog .card-blog img{
+    max-width: 100%;
+    display: block;
+}
+.blog .content-card-blog .card-blog h3{
+    font-size: 1.2em;
+    line-height: 1.4;
+    margin: 1em 0 0.5em;
+}
+.blog .content-card-blog .card-blog p{
+    margin-bottom: 0.5em;
+}
+.blog .content-card-blog .card-blog a{
+    text-decoration: none;
+}
+
+/** Footer **/
+footer{
+    background-color: #344FBA;
+    color: #fff;
+}
+.footer-top{
+    padding: 3em 0;
+}
+.footer-top .container{
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+}
+.footer-top .logo-foo img{
+    display: block;
+    width: 200px;
+}
+.footer-bottom{
+    background-color: #000;
+}
+.footer-top .row-contact div{
+    margin: 14px 0;
+    display: flex;
+}
+.footer-top .row-contact div:first-child{
+    margin-top: 0;
+}
+.footer-top .row-contact .icon{
+    margin-right: 12px;
+    display: inline-block;
+}
+.footer-top .row-contact .icon svg{
+    height: 18px;
+    display: block;
+}
+.footer-top .row-contact .info{
+    position: relative;
+    top: -3px;
+}
+.footer-top .row-contact .social{
+    display: flex;
+    gap: 12px;
+    margin-bottom: 0;
+}
+.footer-top .row-contact .social svg{
+    height: 30px;
+    vertical-align: middle;
+}
+.footer-top .menu-foo ul{
+    list-style: none;
+    margin-bottom: 0;
+    padding: 0;
+}
+.footer-top .menu-foo li{
+    margin-bottom: 12px;
+}
+.footer-top .menu-foo li a{
+    color: #fff;
+    text-decoration: none;
+}
+.footer-top .subscribe{
+    min-width: 350px;
+}
+.footer-top .subscribe h4{
+    font-size: 1em;
+    font-weight: 600;
+    margin: 0;
+    line-height: 1.4;
+}
+.footer-top .subscribe p{
+    margin-bottom: 0;
+}
+.footer-top .subscribe form{
+    margin: 10px 0;
+    position: relative;
+}
+.footer-top .subscribe form input[type="email"]{
+    height: 40px;
+    padding: 5px 96px 5px 10px;
+    width: 100%;
+    font-size: 1em;
+    font-family: inherit;
+}
+.footer-top .subscribe form input[type="submit"]{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 40px;
+    background: #000;
+    border: 0;
+    color: #fff;
+    width: 90px;
+    cursor: pointer;
+    font-size: 1em;
+    font-family: inherit;
+}
+
+.footer-bottom .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    gap: 60px;
+    align-items: center;
+    height: 40px;
+}
+.footer-bottom .menu-foo-bottom{
+    background-color: #000;
+    font-size: 14px;
+    width: 50%;
+}
+.footer-bottom .menu-foo-bottom ul{
+    display: flex;
+    list-style: none;
+    gap: 50px;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+.footer-bottom .menu-foo-bottom li a{
+    color: #fff;
+    text-decoration: none;
+}
+.footer-bottom .copy{
+    font-size: 14px;
+}
+
+/** Pages **/
+.banner-page{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 120px;
+}
+.banner-nosotros{
+    background-image: url(../assets/banner_nosotros.jpg);
+}
+.banner-portafolio{
+    background-image: url(../assets/banner_nosotros.jpg);
+}
+.banner-page .opacity{
+    height: 100%;
+    display: flex;
+    background-color: #0000008f;
+    align-items: center;
+}
+.banner-page h1{
+    color: #fff;
+    font-size: 2.5em;
+    margin: 0;
+    font-weight: 600;
+    text-align: center;
+}
+
+.content-page{
+    padding: 5em 0;
+}
+.content-page h2{
+    font-size: 1.6em;
+}
+.row-article{
+    display: flex;
+    align-items: center;
+    margin-bottom: 4em;
+}
+.row-article figure{
+    padding-right: 40px;
+    width: 50%;
+    margin: 0;
+}
+.row-article figure img{
+    max-width: 100%;
+    display: block;
+}
+.row-article .content-article{
+    padding-left: 40px;
+    width: 50%;
+}
+.row-article .content-article h2{
+    font-size: 1.8em;
+    margin-bottom: 0.5em;
+    font-weight: 600;
+    line-height: 1.5;
+}
+.row-article .content-article p{
+    line-height: 1.6em;
+    margin-bottom: 0;
+}
+.row-article.img-right{
+    flex-direction: row-reverse;
+}
+.row-article.img-right figure{
+    padding-left: 40px;
+    padding-right: 0;
+}
+.row-article.img-right .content-article{
+    padding-right: 40px;
+    padding-left: 0;
+}
+
+.content-page.no-padding{
+    padding-bottom: 0;
+}
+.banner-cta.no-margin{
+    margin-bottom: 0;
+}
+
+/** Nosotros **/
+.col-experience h3{
+    font-size: 1em;
+}
+
+/** Portfolio **/
+.content-portfolio{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 300px);
+    gap: 10px;
+    grid-template-areas: 
+    "portfolio-1 portfolio-1 portfolio-2 portfolio-3"
+    "portfolio-4 portfolio-5 portfolio-5 portfolio-6"
+    "portfolio-7 portfolio-8 portfolio-9 portfolio-9"
+    ;
+}
+.content-portfolio .portfolio-1{
+    grid-area: portfolio-1;
+}
+.content-portfolio .portfolio-2{
+    grid-area: portfolio-2;
+}
+.content-portfolio .portfolio-3{
+    grid-area: portfolio-3;
+}
+.content-portfolio .portfolio-4{
+    grid-area: portfolio-4;
+}
+.content-portfolio .portfolio-5{
+    grid-area: portfolio-5;
+}
+.content-portfolio .portfolio-6{
+    grid-area: portfolio-6;
+}
+.content-portfolio .portfolio-7{
+    grid-area: portfolio-7;
+}
+.content-portfolio .portfolio-8{
+    grid-area: portfolio-8;
+}
+.content-portfolio .portfolio-9{
+    grid-area: portfolio-9;
+}
+.content-portfolio .card-portfolio{
+    position: relative;
+}
+.content-portfolio .card-portfolio .op{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0000005c;
+}
+.content-portfolio .card-portfolio img{
+    display: block;
+    max-width: 100%;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.content-portfolio h2{
+    position: absolute;
+    top: 42%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: #fff;
+}
+
+/** Blog **/
+.content-page.blog{
+    margin: 0;
+}
+.page-blog .content-card-blog{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 30px;
+    row-gap: 50px;
+}
+.page-blog .content-card-blog .card-blog{
+    width: 100%;
+}
+.page-blog .card-blog .date{
+    font-size: 14px;
+    margin: 1em 0 0.5em;
+    display: block;
+}
+.page-blog .card-blog a.btn{
+    padding: 6px 15px;
+}
+.page-blog .content-card-blog .card-blog h2{
+    font-size: 1.2em;
+    line-height: 1.4;
+    margin: 0 0 0.5em;
+    text-align: left;
+}
+.nav-pages{
+    text-align: center;
+    margin-top: 3em;
+}
+.nav-pages a{
+    text-decoration: none;
+}
+.nav-pages a, .nav-pages span{
+    margin: 0 5px;
+    color: #000;
+}
+
+/** Contacto **/
+.info-form-contact{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.info-form-contact .info-contacto{
+    width: 30%;
+}
+.info-form-contact .info-contacto div{
+    margin-bottom: 0.8em;
+    line-height: 1.5em;    
+}
+.info-form-contact .info-contacto .horario{
+    margin-top: 1.2em;
+}
+.info-form-contact .info-contacto .icon{
+    width: 30px;
+    display: inline-block;
+    margin-right: 5px;
+}
+.info-form-contact .info-contacto .icon svg{
+    fill: #000;
+    position: relative;
+    top: 4px;
+    height: 20px;
+}
+.info-form-contact form{
+    width: 70%;
+    max-width: 600px;
+    border: 1px solid #c4c4c4;
+    padding: 2em;
+}
+.info-form-contact form .row-form{
+    display: flex;
+    margin-bottom: 20px;
+}
+.info-form-contact form .row-form.center{
+    justify-content: center;
+}
+.info-form-contact form .row-form.row-2{
+    gap: 30px;
+}
+.info-form-contact form .row-form:last-child{
+    margin-bottom: 0;
+}
+.info-form-contact form .row-form input[type="text"],
+.info-form-contact form .row-form input[type="tel"],
+.info-form-contact form .row-form input[type="email"]{
+    width: 100%;
+    border: 1px solid #b8b8b8;
+    color: #000;
+    height: 40px;
+    padding: 5px 10px;
+    font-size: 1em;
+}
+.info-form-contact form .row-form textarea{
+    width: 100%;
+    border: 1px solid #b8b8b8;
+    color: #000;
+    padding: 5px 10px;
+    font-size: 1em;
+}
+.info-form-contact form .row-form .btn{
+    border: 0;
+    cursor: pointer;
+}
+
+.contact-map{
+    margin: 4em 0 0;
+    text-align: center;  
+}
+.contact-map h2{
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+.contact-map iframe{
+    width: 100%;
+    max-width: 1020px;
+}
+
+/** Responsive **/
+@media ( max-width: 1024px ) {
+    nav ul{
+        gap: 40px;
+    }
+    .footer-top .logo-foo img{
+        width: 150px;
+    }
+    .footer-top .subscribe{
+        min-width: 0;
+    }
+
+    /** Home **/
+    .banner h1{
+        font-size: 2.5em;
+    }
+    .acerca-de article h2,
+    .services h2,
+    .banner-cta h2, .banner-cta h3,
+    .blog h2{
+        font-size: 1.6em;
+    }
+    .services .card-service h3{
+        font-size: 1.1em;
+    }
+    .blog .content-card-blog .card-blog h3,
+    .page-blog .content-card-blog .card-blog h2{
+        font-size: 1em;
+    }
+    .acerca-de,
+    .services,
+    .banner-cta,
+    .blog{
+        margin: 3em 0;
+    }
+
+    /** Servicios **/
+    .row-article .content-article h2{
+        font-size: 1.6em;
+    }
+
+    /** Portfolio **/
+    .content-portfolio{
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(6, 250px);
+        grid-template-areas: 
+        "portfolio-1 portfolio-1 portfolio-2 portfolio-2"
+        "portfolio-1 portfolio-1 portfolio-3 portfolio-3"
+        "portfolio-4 portfolio-4 portfolio-5 portfolio-5"
+        "portfolio-6 portfolio-6 portfolio-5 portfolio-5"
+        "portfolio-7 portfolio-7 portfolio-8 portfolio-8"
+        "portfolio-7 portfolio-7 portfolio-9 portfolio-9"
+        ;
+    }
+
+    /** Blog **/
+    .blog .content-card-blog .card-blog p,
+    .page-blog .card-blog a.btn{
+        font-size: 15px;
+    }
+}
+@media ( max-width: 853px ) {
+    .logo img{
+        width: 150px;
+    }
+    .footer-top{
+        padding: 2em 0;
+    }
+    .footer-top .container{
+        flex-wrap: wrap;
+    }
+    .footer-top .container .logo-foo{
+        width: 100%;
+    }
+    .footer-top .logo-foo img{
+        margin: auto;
+    }
+    .footer-top .container > div{
+        width: 29.3%;
+    }
+    .footer-top .subscribe form input[type="submit"]{
+        position: relative;
+        width: 100%;
+    }
+    .footer-top .subscribe form input[type="email"]{
+        padding-right: 10px;
+    }
+
+    /** Page **/
+    .banner-page{
+        height: 80px;
+    }
+    .banner-page h1{
+        font-size: 2em;
+    }
+    .content-page{
+        padding: 3em 0;
+    }
+
+    /** Home **/
+    .banner{
+        height: 400px;
+    }
+    .banner h1{
+        font-size: 2.2em;
+    }
+    .acerca-de figure{
+        padding-right: 0;
+    }
+    .banner-cta{
+        height: 250px;
+    }
+    .content-page h2,
+    .row-article .content-article h2{
+        font-size: 1.4em;
+    }
+
+    /** Servicios **/
+    .row-article figure,
+    .row-article.img-right .content-article{
+        padding-right: 20px;
+    }
+    .row-article .content-article,
+    .row-article.img-right figure{
+        padding-left: 20px;
+    }
+
+    /** Portfolio **/
+    .content-portfolio{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 250px);
+        grid-template-areas: 
+        "portfolio-1 portfolio-2"
+        "portfolio-3 portfolio-4"
+        "portfolio-5 portfolio-6"
+        "portfolio-7 portfolio-8"
+        "portfolio-9 portfolio-9"
+        ;
+    }
+}
+@media ( max-width: 768px ) {
+    header{
+        height: 60px;
+    }
+    header .container{
+        justify-content: center;
+    }
+    header .icon{
+        display: block;
+    }
+    header nav{
+        display: none;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        top: 60px;
+    }
+    header .search{
+        position: absolute;
+        right: 15px;
+    }
+    nav ul{
+        flex-direction: column;
+        gap: 0;
+        background: #fff;
+        box-shadow: 0px 7px 10px -15px #000;
+    }
+    nav ul li{
+        border-bottom: 1px solid #eee;
+    }
+    nav ul li a{
+        padding: 8px 15px;
+        display: block;
+    }
+    
+    .footer-top .container{
+        gap: 0;
+    }
+    .footer-top .container .logo-foo{
+        margin: 20px 0;
+    }
+    .footer-top .row-contact div{
+        justify-content: center;
+    }
+    
+    .footer-top .container > div{
+        width: 100%;
+        text-align: center;
+        margin: 12px 0;
+    }
+    .footer-top .container > div.subscribe{
+        max-width: 320px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .footer-bottom .container{
+        gap: 10px;
+        justify-content: center;
+        flex-wrap: wrap;
+        height: auto;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    .footer-bottom .menu-foo-bottom{
+        width: 100%;
+    }
+    .footer-bottom .menu-foo-bottom ul{
+        justify-content: center;
+    }
+
+    /** Home **/
+    .acerca-de .container{
+        flex-direction: column-reverse;
+    }
+    .acerca-de article{
+        padding-left: 0;
+        width: 100%;
+        margin-bottom: 2em;
+    }
+    .acerca-de article h2{
+        text-align: center;
+    }
+    .acerca-de article a.btn{
+        display: block;
+        max-width: 200px;
+        text-align: center;
+        margin: auto;
+    }
+    .acerca-de figure{
+        width: 100%;
+    }
+    .acerca-de figure img{
+        max-width: 400px;
+        margin: auto;
+        display: block;
+    }
+    .services .card-service img{
+        max-width: 400px;
+        margin: auto;
+    }
+    .services .content-card-service{
+        gap: 20px;
+        flex-direction: column;
+    }
+
+    .blog .content-card-blog{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .blog .content-card-blog .card-blog{
+        width: 100%;
+        max-width: 400px;
+        margin: auto;
+    }
+    .blog .content-card-blog .card-blog img{
+        max-width: 400px;
+        margin: auto;
+    }
+
+    /** Servicios **/
+    .row-article,
+    .row-article.img-right{
+        flex-direction: column-reverse;
+    }
+    .row-article figure,
+    .row-article .content-article{
+        width: 100%;
+        padding: 0;
+    }
+    .row-article.img-right .content-article{
+        padding-right: 0;
+    }
+    .row-article.img-right figure{
+        padding-left: 0;
+    }
+    .row-article .content-article{
+        margin-bottom: 1em;
+    }
+
+    /** Contacto **/
+    .info-form-contact{
+        flex-direction: column-reverse;
+    }
+    .info-form-contact .info-contacto{
+        width: 100%;
+        text-align: center;
+    }
+    .info-form-contact form{
+        width: 100%;
+        margin: auto;
+        margin-bottom: 3em;
+    }
+
+    /** Blog **/
+    .page-blog .content-card-blog{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        column-gap: 30px;
+        row-gap: 50px;
+    }
+    .page-blog .content-card-blog .card-blog{
+        margin: 0;
+    }
+    .page-blog .content-card-blog .card-blog img{
+        width: 100%;
+    }
+}
+
+@media ( max-width: 640px ) {
+    /** Home **/
+    .banner{
+        height: 300px;
+    }
+    .banner h1{
+        font-size: 1.8em;
+    }
+    .banner .btn{
+        font-size: 1em;
+    }
+    .acerca-de article h2, .services h2, .banner-cta h2, .banner-cta h3, .blog h2{
+        font-size: 1.4em;
+    }
+    .services .card-service h3{
+        font-size: 1em;
+    }
+    .banner-cta .btn{
+        font-size: 1em;
+    }
+    .acerca-de figure img,
+    .services .card-service img,
+    .blog .content-card-blog .card-blog img{
+        width: 100%;
+    }
+
+    /** Page **/
+    .banner-page{
+        height: 50px;
+    }
+    .banner-page h1{
+        font-size: 1.5em;
+    }
+    .content-page{
+        padding: 2em 0;
+    }
+    .content-page h2,
+    .row-article .content-article h2{
+        font-size: 1.2em;
+    }
+    .row-article{
+        margin-bottom: 3em;
+    }
+
+    /** Contacto **/
+    .info-form-contact form{
+        border: 0;
+        padding: 0;
+    }
+}
+
+@media ( max-width: 480px ) {
+    /** Portfolio **/
+    .content-portfolio{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(9, 250px);
+        grid-template-areas: 
+        "portfolio-1"
+        "portfolio-2"
+        "portfolio-3"
+        "portfolio-4"
+        "portfolio-5"
+        "portfolio-6"
+        "portfolio-7"
+        "portfolio-8"
+        "portfolio-9"
+        ;
+    }
+
+    /** Blog **/
+    .page-blog .content-card-blog{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        row-gap: 40px;
+    }
+    .page-blog .content-card-blog .card-blog{
+        max-width: 100%;
+    }
+}
+
+@media ( max-width: 420px ) {
+    .footer-bottom .menu-foo-bottom ul{
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .footer-bottom .menu-foo-bottom ul li{
+        width: 100%;
+        text-align: center;
+    }
+
+    /** Home **/
+    body p{
+        font-size: 15px;
+    }
+    .acerca-de, .services, .banner-cta, .blog{
+        margin: 2em 0;
+    }
+
+    /** Contacto **/
+    .info-form-contact form .row-form.row-2{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .info-form-contact .info-contacto{
+        font-size: 15px;
+    }
+}
