@@ -1,0 +1,65 @@
+/** Portfolio **/
+.content-portfolio{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 300px);
+    gap: 10px;
+    grid-template-areas: 
+    "portfolio-1 portfolio-1 portfolio-2 portfolio-3"
+    "portfolio-4 portfolio-5 portfolio-5 portfolio-6"
+    "portfolio-7 portfolio-8 portfolio-9 portfolio-9"
+    ;
+    .portfolio-1{
+        grid-area: portfolio-1;
+    }
+    .portfolio-2{
+        grid-area: portfolio-2;
+    }
+    .portfolio-3{
+        grid-area: portfolio-3;
+    }
+    .portfolio-4{
+        grid-area: portfolio-4;
+    }
+    .portfolio-5{
+        grid-area: portfolio-5;
+    }
+    .portfolio-6{
+        grid-area: portfolio-6;
+    }
+    .portfolio-7{
+        grid-area: portfolio-7;
+    }
+    .portfolio-8{
+        grid-area: portfolio-8;
+    }
+    .portfolio-9{
+        grid-area: portfolio-9;
+    }
+    .card-portfolio{
+        position: relative;
+        .op{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #0000005c;
+        }
+        img{
+            display: block;
+            max-width: 100%;
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    h2{
+        position: absolute;
+        top: 42%;
+        left: 0;
+        right: 0;
+        text-align: center;
+        color: #fff;
+    }
+}

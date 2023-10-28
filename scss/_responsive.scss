@@ -1,0 +1,418 @@
+/** Responsive **/
+@media ( max-width: 1024px ) {
+    nav ul{
+        gap: 40px;
+    }
+    .footer-top .logo-foo img{
+        width: 150px;
+    }
+    .footer-top .subscribe{
+        min-width: 0;
+    }
+
+    /** Home **/
+    .banner h1{
+        font-size: 2.5em;
+    }
+    .acerca-de article h2,
+    .services h2,
+    .banner-cta h2, .banner-cta h3,
+    .blog h2{
+        font-size: 1.6em;
+    }
+    .services .card-service h3{
+        font-size: 1.1em;
+    }
+    .blog .content-card-blog .card-blog h3,
+    .page-blog .content-card-blog .card-blog h2{
+        font-size: 1em;
+    }
+    .acerca-de,
+    .services,
+    .banner-cta,
+    .blog{
+        margin: 3em 0;
+    }
+
+    /** Servicios **/
+    .row-article .content-article h2{
+        font-size: 1.6em;
+    }
+
+    /** Portfolio **/
+    .content-portfolio{
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(6, 250px);
+        grid-template-areas: 
+        "portfolio-1 portfolio-1 portfolio-2 portfolio-2"
+        "portfolio-1 portfolio-1 portfolio-3 portfolio-3"
+        "portfolio-4 portfolio-4 portfolio-5 portfolio-5"
+        "portfolio-6 portfolio-6 portfolio-5 portfolio-5"
+        "portfolio-7 portfolio-7 portfolio-8 portfolio-8"
+        "portfolio-7 portfolio-7 portfolio-9 portfolio-9"
+        ;
+    }
+
+    /** Blog **/
+    .blog .content-card-blog .card-blog p,
+    .page-blog .card-blog a.btn{
+        font-size: 15px;
+    }
+    
+}
+@media ( max-width: 853px ) {
+    .logo img{
+        width: 150px;
+    }
+    .footer-top{
+        padding: 2em 0;
+        .container{
+            flex-wrap: wrap;
+            .logo-foo{
+                width: 100%;
+                img{
+                    margin: auto;
+                }
+            }
+            > div{
+                width: 29.3%;
+            }
+        }
+        .subscribe form input[type="submit"]{
+            position: relative;
+            width: 100%;
+        }
+        .subscribe form input[type="email"]{
+            padding-right: 10px;
+        }
+    }
+
+    /** Page **/
+    .banner-page{
+        height: 80px;
+        h1{
+            font-size: 2em;
+        }
+    }
+    .content-page{
+        padding: 3em 0;
+    }
+
+    /** Home **/
+    .banner{
+        height: 400px;
+        h1{
+            font-size: 2.2em;
+        }
+    }
+    .acerca-de figure{
+        padding-right: 0;
+    }
+    .banner-cta{
+        height: 250px;
+    }
+    .content-page h2,
+    .row-article .content-article h2{
+        font-size: 1.4em;
+    }
+
+    /** Servicios **/
+    .row-article figure,
+    .row-article.img-right .content-article{
+        padding-right: 20px;
+    }
+    .row-article .content-article,
+    .row-article.img-right figure{
+        padding-left: 20px;
+    }
+
+    /** Portfolio **/
+    .content-portfolio{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 250px);
+        grid-template-areas: 
+        "portfolio-1 portfolio-2"
+        "portfolio-3 portfolio-4"
+        "portfolio-5 portfolio-6"
+        "portfolio-7 portfolio-8"
+        "portfolio-9 portfolio-9"
+        ;
+    }
+}
+@media ( max-width: 768px ) {
+    header{
+        height: 60px;
+        .container{
+            justify-content: center;
+        }
+        .icon{
+            display: block;
+        }
+        nav{
+            display: none;
+            position: absolute;
+            left: 0;
+            width: 100%;
+            top: 60px;
+        }
+        .search{
+            position: absolute;
+            right: 15px;
+        }
+    }
+    nav ul{
+        flex-direction: column;
+        gap: 0;
+        background: #fff;
+        box-shadow: 0px 7px 10px -15px #000;
+        li{
+            border-bottom: 1px solid #eee;
+        }
+        a{
+            padding: 8px 15px;
+            display: block;
+        }
+    }
+ 
+    .footer-top .container{
+        gap: 0;
+        .logo-foo{
+            margin: 20px 0;
+        }
+        .row-contact div{
+            justify-content: center;
+        }
+        > div{
+            width: 100%;
+            text-align: center;
+            margin: 12px 0;
+            &.subscribe{
+                max-width: 320px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+    }
+
+    .footer-bottom .container{
+        gap: 10px;
+        justify-content: center;
+        flex-wrap: wrap;
+        height: auto;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    .footer-bottom .menu-foo-bottom{
+        width: 100%;
+        ul{
+            justify-content: center;
+        }
+    }
+
+    /** Home **/
+    .acerca-de .container{
+        flex-direction: column-reverse;
+    }
+    .acerca-de article{
+        padding-left: 0;
+        width: 100%;
+        margin-bottom: 2em;
+        h2{
+            text-align: center;
+        }
+        a.btn{
+            display: block;
+            max-width: 200px;
+            text-align: center;
+            margin: auto;
+        }
+    }
+
+    .acerca-de figure{
+        width: 100%;
+        img{
+            max-width: 400px;
+            margin: auto;
+            display: block;
+        }
+    }
+    .services .card-service img{
+        max-width: 400px;
+        margin: auto;
+    }
+    .services .content-card-service{
+        gap: 20px;
+        flex-direction: column;
+    }
+
+    .blog .content-card-blog{
+        flex-direction: column;
+        gap: 30px;
+        .card-blog{
+            width: 100%;
+            max-width: 400px;
+            margin: auto;
+            img{
+                max-width: 400px;
+                margin: auto;
+            }
+        }
+    }
+
+    /** Servicios **/
+    .row-article{
+        flex-direction: column-reverse;
+        figure, .content-article{
+            width: 100%;
+            padding: 0;
+        }
+        .content-article{
+            margin-bottom: 1em;
+        }
+    }
+    .row-article.img-right{
+        flex-direction: column-reverse;
+        .content-article{
+            padding-right: 0;
+        }
+        figure{
+            padding-left: 0;
+        }
+    }
+
+    /** Contacto **/
+    .info-form-contact{
+        flex-direction: column-reverse;
+        .info-contacto{
+            width: 100%;
+            text-align: center;
+        }
+        form{
+            width: 100%;
+            margin: auto;
+            margin-bottom: 3em;
+        }
+    }
+
+    /** Blog **/
+    .page-blog .content-card-blog{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        column-gap: 30px;
+        row-gap: 50px;
+        .card-blog{
+            margin: 0;
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media ( max-width: 640px ) {
+    /** Home **/
+    .banner{
+        height: 300px;
+        h1{
+            font-size: 1.8em;
+        }
+        .btn{
+            font-size: 1em;
+        }
+    }
+    .acerca-de article h2, .services h2, .banner-cta h2, .banner-cta h3, .blog h2{
+        font-size: 1.4em;
+    }
+    .services .card-service h3{
+        font-size: 1em;
+    }
+    .banner-cta .btn{
+        font-size: 1em;
+    }
+    .acerca-de figure img,
+    .services .card-service img,
+    .blog .content-card-blog .card-blog img{
+        width: 100%;
+    }
+
+    /** Page **/
+    .banner-page{
+        height: 50px;
+        h1{
+            font-size: 1.5em;
+        }
+    }
+    .content-page{
+        padding: 2em 0;
+    }
+    .content-page h2,
+    .row-article .content-article h2{
+        font-size: 1.2em;
+    }
+    .row-article{
+        margin-bottom: 3em;
+    }
+
+    /** Contacto **/
+    .info-form-contact form{
+        border: 0;
+        padding: 0;
+    }
+}
+
+@media ( max-width: 480px ) {
+    /** Portfolio **/
+    .content-portfolio{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(9, 250px);
+        grid-template-areas: 
+        "portfolio-1"
+        "portfolio-2"
+        "portfolio-3"
+        "portfolio-4"
+        "portfolio-5"
+        "portfolio-6"
+        "portfolio-7"
+        "portfolio-8"
+        "portfolio-9"
+        ;
+    }
+
+    /** Blog **/
+    .page-blog .content-card-blog{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        row-gap: 40px;
+        .card-blog{
+            max-width: 100%;
+        }
+    }
+}
+
+@media ( max-width: 420px ) {
+    .footer-bottom .menu-foo-bottom ul{
+        flex-wrap: wrap;
+        gap: 10px;
+        li{
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+    /** Home **/
+    body p{
+        font-size: 15px;
+    }
+    .acerca-de, .services, .banner-cta, .blog{
+        margin: 2em 0;
+    }
+
+    /** Contacto **/
+    .info-form-contact form .row-form.row-2{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .info-form-contact .info-contacto{
+        font-size: 15px;
+    }
+}

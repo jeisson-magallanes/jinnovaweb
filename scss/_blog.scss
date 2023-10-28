@@ -1,0 +1,36 @@
+/** Blog **/
+.page-blog .content-card-blog{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 30px;
+    row-gap: 50px;
+    .card-blog{
+        width: 100%;
+        .date{
+            font-size: 14px;
+            margin: 1em 0 0.5em;
+            display: block;
+        }
+        a.btn{
+            padding: 6px 15px;
+        }
+        h2{
+            font-size: 1.2em;
+            line-height: 1.4;
+            margin: 0 0 0.5em;
+            text-align: left;
+        }
+    }
+}
+.nav-pages{
+    text-align: center;
+    margin-top: 3em;
+    a{
+        text-decoration: none;
+    }
+    a, span{
+        margin: 0 5px;
+        color: $text-color;
+    }
+}

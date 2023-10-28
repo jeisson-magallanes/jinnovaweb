@@ -1,0 +1,79 @@
+/** Contacto **/
+.info-form-contact{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    .info-contacto{
+        width: 30%;
+        div{
+            margin-bottom: 0.8em;
+            line-height: 1.5em;    
+        }
+        .horario{
+            margin-top: 1.2em;
+        }
+        .icon{
+            width: 30px;
+            display: inline-block;
+            margin-right: 5px;
+            svg{
+                fill: #000;
+                position: relative;
+                top: 4px;
+                height: 20px;
+            }
+        }
+    }
+    form{
+        width: 70%;
+        max-width: 600px;
+        border: 1px solid #c4c4c4;
+        padding: 2em;
+        .row-form{
+            display: flex;
+            margin-bottom: 20px;
+            &.center{
+                justify-content: center;
+            }
+            &.row-2{
+                gap: 30px;
+            }
+            &:last-child{
+                margin-bottom: 0;
+            }
+            input[type="text"],
+            input[type="tel"],
+            input[type="email"]{
+                width: 100%;
+                border: 1px solid #b8b8b8;
+                color: $text-color;
+                height: 40px;
+                padding: 5px 10px;
+                font-size: 1em;
+            }
+            textarea{
+                width: 100%;
+                border: 1px solid #b8b8b8;
+                color: $text-color;
+                padding: 5px 10px;
+                font-size: 1em;
+            }
+            .btn{
+                border: 0;
+                cursor: pointer;
+            }
+        }
+    }
+}
+.contact-map{
+    margin: 4em 0 0;
+    text-align: center;  
+    h2{
+        font-size: 2em;
+        margin-bottom: 0.5em;
+    }
+    iframe{
+        width: 100%;
+        max-width: 1020px;
+    }
+}
