@@ -17,12 +17,11 @@
   background-color: #344FBA;
   color: white;
   text-decoration: none;
-  padding: 10px 20px;
   display: inline-block;
   letter-spacing: 1px;
   border-radius: 5px;
   font-size: 1em;
-  transition: all 0.3s ease-in;
+  padding: 10px 20px;
 }
 .btn:hover {
   background-color: #000;
@@ -36,7 +35,6 @@ body {
 
 a {
   color: #344FBA;
-  transition: all 0.3s ease-in;
 }
 
 img {
@@ -138,6 +136,7 @@ footer {
 .footer-top .row-contact .icon svg {
   height: 18px;
   display: block;
+  fill: #fff;
 }
 .footer-top .row-contact .info {
   position: relative;
@@ -151,6 +150,7 @@ footer {
 .footer-top .row-contact .social svg {
   height: 30px;
   vertical-align: middle;
+  fill: #fff;
 }
 .footer-top .menu-foo ul {
   list-style: none;
@@ -242,12 +242,13 @@ footer {
   height: 560px;
 }
 .banner .opacity {
-  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.5411764706);
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.54);
 }
 .banner h1 {
   color: #fff;
@@ -316,15 +317,17 @@ footer {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+  background-attachment: fixed;
   height: 360px;
   margin: 5em 0;
 }
 .banner-cta .opacity {
-  height: 100%;
   display: flex;
   align-items: center;
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.431372549);
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.43);
 }
 .banner-cta h2, .banner-cta h3 {
   color: #fff;
@@ -369,6 +372,7 @@ footer {
 }
 .blog .content-card-blog .card-blog a {
   text-decoration: none;
+  display: inline-block;
 }
 
 /** Pages **/
@@ -379,10 +383,11 @@ footer {
   height: 120px;
 }
 .banner-page .opacity {
-  height: 100%;
   display: flex;
-  background-color: rgba(0, 0, 0, 0.5607843137);
   align-items: center;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.56);
 }
 .banner-page h1 {
   color: #fff;
@@ -500,9 +505,9 @@ footer {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.3607843137);
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.36);
 }
 .content-portfolio .card-portfolio img {
   display: block;
@@ -537,6 +542,7 @@ footer {
   display: block;
 }
 .page-blog .content-card-blog .card-blog a.btn {
+  font-size: 1em;
   padding: 6px 15px;
 }
 .page-blog .content-card-blog .card-blog h2 {
@@ -639,6 +645,34 @@ footer {
   max-width: 1020px;
 }
 
+.animation-img {
+  transition: all 0.3s ease-in;
+}
+.animation-img:hover {
+  transform: scale(0.98);
+}
+
+.animation-content-img {
+  overflow: hidden;
+}
+.animation-content-img img {
+  transition: all 0.3s ease-in;
+}
+.animation-content-img:hover img {
+  transform: scale(1.05);
+}
+
+a {
+  transition: all 0.3s ease-in;
+}
+
+.animation-btn {
+  transition: all 0.3s ease-in;
+}
+.animation-btn:hover {
+  transform: scale(1.05);
+}
+
 /** Responsive **/
 @media (max-width: 1024px) {
   nav ul {
@@ -684,8 +718,10 @@ footer {
     grid-template-areas: "portfolio-1 portfolio-1 portfolio-2 portfolio-2" "portfolio-1 portfolio-1 portfolio-3 portfolio-3" "portfolio-4 portfolio-4 portfolio-5 portfolio-5" "portfolio-6 portfolio-6 portfolio-5 portfolio-5" "portfolio-7 portfolio-7 portfolio-8 portfolio-8" "portfolio-7 portfolio-7 portfolio-9 portfolio-9";
   }
   /** Blog **/
-  .blog .content-card-blog .card-blog p,
-  .page-blog .card-blog a.btn {
+  .blog .content-card-blog .card-blog p {
+    font-size: 15px;
+  }
+  .page-blog .content-card-blog .card-blog a.btn {
     font-size: 15px;
   }
 }

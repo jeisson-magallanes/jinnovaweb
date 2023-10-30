@@ -1,0 +1,12 @@
+@mixin button( $font-size, $padding : "10px 20px" ){
+    font-size: $font-size;
+    @if $padding != "10px 20px" {
+        padding: $padding;
+    }
+}
+
+@mixin opacity( $value : 0.5 ){
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, $value);
+}

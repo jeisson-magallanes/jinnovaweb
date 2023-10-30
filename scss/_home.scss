@@ -7,12 +7,11 @@
     height: 560px;
 
     .opacity{
-        height: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
         text-align: center;
-        background-color: #0000008a;
+        @include opacity(0.54);
     }
     h1{
         color: #fff;
@@ -20,7 +19,7 @@
         margin-bottom: 0.5em;
     }
     .btn{
-        font-size: 1.2em;
+        @include button( 1.2em );
     }
 }
 
@@ -83,14 +82,14 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+    background-attachment: fixed;
     height: 360px;
     margin: 5em 0;
     .opacity{
-        height: 100%;
         display: flex;
         align-items: center;
         text-align: center;
-        background-color: #0000006e;
+        @include opacity(0.43);
     }
     h2, h3{
         color: #fff;
@@ -98,7 +97,7 @@
         margin-bottom: 1em;
     }
     .btn{
-        font-size: 1.2em;
+        @include button( 1.2em );
     }
     &.no-margin{
         margin-bottom: 0;
@@ -133,6 +132,7 @@
             }
             a{
                 text-decoration: none;
+                display: inline-block;
             }
         }
     }

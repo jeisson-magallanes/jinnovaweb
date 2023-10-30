@@ -5,10 +5,9 @@
     background-position: center;
     height: 120px;
     .opacity{
-        height: 100%;
         display: flex;
-        background-color: #0000008f;
         align-items: center;
+        @include opacity( 0.56 );
     }
     h1{
         color: #fff;

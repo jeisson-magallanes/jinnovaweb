@@ -1,47 +1,7 @@
-/** Reset **/
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 @import "variables.scss";
-
-/** Global **/
-.container{
-    max-width: $width-container;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin: 0 auto;
-}
-.btn{
-    background-color: $primary-color;
-    color: #ffff;
-    text-decoration: none;
-    padding: 10px 20px;
-    display: inline-block;
-    letter-spacing: 1px;
-    border-radius: 5px;
-    font-size: 1em;
-    transition: all .3s ease-in;
-    &:hover{
-        background-color: $primary-color-hover;
-    }
-}
-
-body{
-    font-family: $font-family;
-    font-size: $font-size;
-    color: $text-color;
-}
-a{
-    color: $primary-color;
-    transition: all .3s ease-in;
-}
-img{
-    max-width: 100%;
-}
-
+@import "mixins.scss";
+@import "reset.scss";
+@import "global.scss";
 @import "header.scss";
 @import "footer.scss";
 @import "home.scss";
@@ -50,4 +10,5 @@ img{
 @import "portfolio.scss";
 @import "blog.scss";
 @import "contacto.scss";
+@import "animaciones.scss";
 @import "responsive.scss";

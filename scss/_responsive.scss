@@ -54,9 +54,11 @@
     }
 
     /** Blog **/
-    .blog .content-card-blog .card-blog p,
-    .page-blog .card-blog a.btn{
+    .blog .content-card-blog .card-blog p{
         font-size: 15px;
+    }
+    .page-blog .content-card-blog .card-blog a.btn{
+        @include button( 15px );
     }
     
 }
@@ -317,7 +319,7 @@
             font-size: 1.8em;
         }
         .btn{
-            font-size: 1em;
+            @include button( 1em );
         }
     }
     .acerca-de article h2, .services h2, .banner-cta h2, .banner-cta h3, .blog h2{
@@ -327,7 +329,7 @@
         font-size: 1em;
     }
     .banner-cta .btn{
-        font-size: 1em;
+        @include button( 1em );
     }
     .acerca-de figure img,
     .services .card-service img,

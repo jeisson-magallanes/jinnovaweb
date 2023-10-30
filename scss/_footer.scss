@@ -1,7 +1,7 @@
 /** Footer **/
 footer{
     background-color: $primary-color;
-    color: #fff;
+    color: $text-color-footer;
 }
 .footer-top{
     padding: 3em 0;
@@ -27,6 +27,7 @@ footer{
         svg{
             height: 18px;
             display: block;
+            fill: $text-color-footer;
         }
     }
     .row-contact .info{
@@ -40,6 +41,7 @@ footer{
         svg{
             height: 30px;
             vertical-align: middle;
+            fill: $text-color-footer;
         }
     }
     .menu-foo ul{
@@ -49,7 +51,7 @@ footer{
         li{
             margin-bottom: 12px;
             a{
-                color: #fff;
+                color: $text-color-footer;
                 text-decoration: none;
             }
         }
@@ -114,7 +116,7 @@ footer{
             margin-bottom: 0;
             padding-left: 0;
             li a{
-                color: #fff;
+                color: $text-color-footer;
                 text-decoration: none;
             }
         }
